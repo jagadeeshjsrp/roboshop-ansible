@@ -4,7 +4,7 @@
     state: installed     #you can check the state parameters inside that doc.  #Whether to install (present or installed, latest), or remove (absent or removed) a package.
 
 - name: Copy roboshop Config file
-  ansible.builtin.copy:
+  ansible.builtin.template:
     src: roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
 
