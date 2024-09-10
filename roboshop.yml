@@ -1,5 +1,5 @@
 - name: Roboshop Project Setup
   hosts: all
-  become: yes   # for to run with sudo user., we must need to use keyword "become"
+  become: true   # for to run with sudo user., we must need to use keyword "become"
   roles:
     - "{{ role_name }}"
