@@ -2,4 +2,7 @@
 #schema_setup=mongo
 #func_nodejs
 
-
+- name: Import common NodeJS
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: nodejs
