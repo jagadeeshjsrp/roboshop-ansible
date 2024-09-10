@@ -19,4 +19,3 @@ SyslogIdentifier=payment
 [Install]
 WantedBy=multi-user.target
 
-{{ lookup('aws_ssm', 'dev.shipping.cart_endpoint', region='us-east-1' ) }}
